@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CareConnect – Community Feed</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>📢 Community Feed</h1>
+      <a href="index.html" class="primary-btn">🏠 Back to Home</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="feedSection">
+      <div id="filters">
+        <input type="text" id="searchInput" placeholder="🔍 Search posts...">
+        <label for="filterCategory">Filter by Category:</label>
+        <select id="filterCategory">
+          <option value="all">All</option>
+          <option value="student">Student Support</option>
+          <option value="supplies">School Supplies</option>
+          <option value="tutoring">Tutoring</option>
+          <option value="transport">Transport</option>
+          <option value="general">General</option>
+        </select>
+      </div>
+      <button id="clearPostsBtn" class="danger">🗑️ Clear All Posts</button>
+      <div id="feedContainer"></div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
